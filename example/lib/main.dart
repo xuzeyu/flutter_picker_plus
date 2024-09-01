@@ -203,6 +203,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       showPickerSelectYear(context);
                     },
                   ),
+                  ListTile(
+                    title: Text('17. Address picker'),
+                    onTap: () {
+                      showPickerAddress(context);
+                    },
+                  ),
                   const SizedBox(height: 60),
                 ],
               )),
@@ -758,5 +764,40 @@ class _MyHomePageState extends State<MyHomePage> {
         onSelect: (Picker picker, int index, List<int> selected) {
           print(picker.adapter.toString());
         }).showBottomSheet(context);
+  }
+
+  showPickerAddress(BuildContext context) async {
+    ChinaAddressPickerAdapter adapter = ChinaAddressPickerAdapter(
+        PickerChinaAddressEnum.provinceAndCityAndArea);
+    List<int> index = adapter.getSelectedsByCode("130127000000");
+    List<int> index2 = adapter.getSelectedsByArea("屏东县");
+    final result = await Picker(
+            confirmTextStyle: TextStyle(fontSize: 15, color: Colors.black),
+            cancelTextStyle: TextStyle(fontSize: 15, color: Colors.grey),
+            cancelHeight: 40,
+            confirmHeight: 40,
+            selecteds: index2,
+            title: const Text("标题"),
+            backgroundColor: Colors.transparent,
+            headerDecoration: const BoxDecoration(
+                border: Border(
+                    bottom: BorderSide(color: Colors.black12, width: 0.5))),
+            adapter: adapter,
+            selectedTextStyle: TextStyle(color: Colors.blue),
+            onConfirm: (picker, value) {
+              print(value.toString());
+              var values = picker.getSelectedValues();
+              print(values);
+            })
+        .showModal(context, backgroundColor: Colors.transparent,
+            builder: (context, view) {
+      return Material(
+          borderRadius: BorderRadius.zero,
+          child: Container(
+            padding: const EdgeInsets.only(top: 4),
+            child: view,
+          ));
+    }); //_sca
+    print("result: $result"); // ffoldKey.currentState);
   }
 }
