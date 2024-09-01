@@ -767,7 +767,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   showPickerAddress(BuildContext context) async {
-    ChinaAddressPickerAdapter adapter = ChinaAddressPickerAdapter(
+    PickerChinaAddressAdapter adapter = PickerChinaAddressAdapter(
         PickerChinaAddressEnum.provinceAndCityAndArea);
     List<int> index = adapter.getSelectedsByCode("130127000000");
     List<int> index2 = adapter.getSelectedsByArea("屏东县");

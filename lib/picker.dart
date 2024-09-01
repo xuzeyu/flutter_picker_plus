@@ -1118,7 +1118,7 @@ class PickerAddressItem<T> {
   }
 }
 
-class ChinaAddressPickerAdapter extends PickerDataAdapter<PickerAddressItem> {
+class PickerChinaAddressAdapter extends PickerDataAdapter<PickerAddressItem> {
   final List<Map<String, dynamic>> address = [
     {
       "province": "北京市",
@@ -6784,7 +6784,7 @@ class ChinaAddressPickerAdapter extends PickerDataAdapter<PickerAddressItem> {
     return "";
   }
 
-  ChinaAddressPickerAdapter(this.chinaAddressEnum) {
+  PickerChinaAddressAdapter(this.chinaAddressEnum) {
     List<PickerItem<PickerAddressItem>> provinceItems = [];
     for (var provinceMap in address) {
       String province = provinceMap['province'];
