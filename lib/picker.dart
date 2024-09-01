@@ -6412,164 +6412,177 @@ class PickerChinaAddressAdapter extends PickerDataAdapter<PickerAddressItem> {
       ]
     },
     {
-      "province": "台湾省",
+      "province": "台湾",
       "code": "710000",
       "citys": [
         {
-          "city": "台北市",
+          "city": "台湾",
           "code": "710000",
           "areas": [
-            {"area": "台北市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "新北市",
-          "code": "710000",
-          "areas": [
-            {"area": "新北市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "桃园市",
-          "code": "710000",
-          "areas": [
-            {"area": "桃园市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "台中市",
-          "code": "710000",
-          "areas": [
-            {"area": "台中市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "台南市",
-          "code": "710000",
-          "areas": [
-            {"area": "台南市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "高雄市",
-          "code": "710000",
-          "areas": [
-            {"area": "高雄市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "基隆市",
-          "code": "710000",
-          "areas": [
-            {"area": "基隆市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "新竹市",
-          "code": "710000",
-          "areas": [
-            {"area": "新竹市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "嘉义市",
-          "code": "710000",
-          "areas": [
-            {"area": "嘉义市", "code": "710000"}
-          ]
-        },
-        {
-          "city": "新竹县",
-          "code": "710000",
-          "areas": [
-            {"area": "新竹县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "苗栗县",
-          "code": "710000",
-          "areas": [
-            {"area": "苗栗县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "彰化县",
-          "code": "710000",
-          "areas": [
-            {"area": "彰化县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "南投县",
-          "code": "710000",
-          "areas": [
-            {"area": "南投县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "云林县",
-          "code": "710000",
-          "areas": [
-            {"area": "云林县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "嘉义县",
-          "code": "710000",
-          "areas": [
-            {"area": "嘉义县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "屏东县",
-          "code": "710000",
-          "areas": [
-            {"area": "屏东县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "宜兰县",
-          "code": "710000",
-          "areas": [
-            {"area": "宜兰县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "花莲县",
-          "code": "710000",
-          "areas": [
-            {"area": "花莲县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "台东县",
-          "code": "710000",
-          "areas": [
-            {"area": "台东县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "澎湖县",
-          "code": "710000",
-          "areas": [
-            {"area": "澎湖县", "code": "710000"}
-          ]
-        },
-        {
-          "city": "连江县",
-          "code": "710000",
-          "areas": [
-            {"area": "连江县", "code": "710000"}
+            {"area": "台湾", "code": "710000"}
           ]
         }
       ]
     },
+    // {
+    //   "province": "台湾省",
+    //   "code": "710000",
+    //   "citys": [
+    //     {
+    //       "city": "台北市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "台北市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "新北市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "新北市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "桃园市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "桃园市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "台中市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "台中市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "台南市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "台南市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "高雄市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "高雄市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "基隆市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "基隆市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "新竹市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "新竹市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "嘉义市",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "嘉义市", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "新竹县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "新竹县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "苗栗县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "苗栗县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "彰化县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "彰化县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "南投县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "南投县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "云林县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "云林县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "嘉义县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "嘉义县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "屏东县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "屏东县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "宜兰县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "宜兰县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "花莲县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "花莲县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "台东县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "台东县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "澎湖县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "澎湖县", "code": "710000"}
+    //       ]
+    //     },
+    //     {
+    //       "city": "连江县",
+    //       "code": "710000",
+    //       "areas": [
+    //         {"area": "连江县", "code": "710000"}
+    //       ]
+    //     }
+    //   ]
+    // },
     {
-      "province": "香港特别行政区",
+      "province": "香港",
       "code": "810000",
       "citys": [
         {
-          "city": "香港特别行政区",
+          "city": "香港",
           "code": "810000",
           "areas": [
             {"area": "中西区", "code": "810001"},
@@ -6595,11 +6608,11 @@ class PickerChinaAddressAdapter extends PickerDataAdapter<PickerAddressItem> {
       ]
     },
     {
-      "province": "澳门特别行政区",
+      "province": "澳门",
       "code": "820000",
       "citys": [
         {
-          "city": "澳门特别行政区",
+          "city": "澳门",
           "code": "820000",
           "areas": [
             {"area": "花地玛堂区", "code": "820001"},
@@ -6746,6 +6759,51 @@ class PickerChinaAddressAdapter extends PickerDataAdapter<PickerAddressItem> {
     return "";
   }
 
+  List<String> getCodesByArea(String area) {
+    List<String> selecteds = [];
+    for (var i = 0; i < data.length; i++) {
+      PickerItem<PickerAddressItem> provinceItem = data[i];
+      if (provinceItem.value != null) {
+        if (chinaAddressEnum == PickerChinaAddressEnum.province) {
+          if (provinceItem.value!.area == area) {
+            selecteds.add(provinceItem.value!.code);
+            return selecteds;
+          }
+        } else if (provinceItem.children != null) {
+          for (var j = 0; j < provinceItem.children!.length; j++) {
+            PickerItem<PickerAddressItem> cityItem = provinceItem.children![j];
+            if (cityItem.value != null) {
+              if (chinaAddressEnum == PickerChinaAddressEnum.provinceAndCity) {
+                if (cityItem.value!.area == area) {
+                  selecteds.add(provinceItem.value!.code);
+                  selecteds.add(cityItem.value!.code);
+                  return selecteds;
+                }
+              } else if (cityItem.children != null) {
+                for (var k = 0; k < cityItem.children!.length; k++) {
+                  PickerItem<PickerAddressItem> areaItem =
+                      cityItem.children![k];
+                  if (areaItem.value != null) {
+                    if (chinaAddressEnum ==
+                        PickerChinaAddressEnum.provinceAndCityAndArea) {
+                      if (areaItem.value!.area == area) {
+                        selecteds.add(provinceItem.value!.code);
+                        selecteds.add(cityItem.value!.code);
+                        selecteds.add(areaItem.value!.code);
+                        return selecteds;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return selecteds;
+  }
+
   String getAreaByCode(String code) {
     for (var i = 0; i < data.length; i++) {
       PickerItem<PickerAddressItem> provinceItem = data[i];
@@ -6782,6 +6840,51 @@ class PickerChinaAddressAdapter extends PickerDataAdapter<PickerAddressItem> {
       }
     }
     return "";
+  }
+
+  List<String> getAreasByCode(String code) {
+    List<String> selecteds = [];
+    for (var i = 0; i < data.length; i++) {
+      PickerItem<PickerAddressItem> provinceItem = data[i];
+      if (provinceItem.value != null) {
+        if (chinaAddressEnum == PickerChinaAddressEnum.province) {
+          if (provinceItem.value!.code == code) {
+            selecteds.add(provinceItem.value!.area);
+            return selecteds;
+          }
+        } else if (provinceItem.children != null) {
+          for (var j = 0; j < provinceItem.children!.length; j++) {
+            PickerItem<PickerAddressItem> cityItem = provinceItem.children![j];
+            if (cityItem.value != null) {
+              if (chinaAddressEnum == PickerChinaAddressEnum.provinceAndCity) {
+                if (cityItem.value!.code == code) {
+                  selecteds.add(provinceItem.value!.area);
+                  selecteds.add(cityItem.value!.area);
+                  return selecteds;
+                }
+              } else if (cityItem.children != null) {
+                for (var k = 0; k < cityItem.children!.length; k++) {
+                  PickerItem<PickerAddressItem> areaItem =
+                      cityItem.children![k];
+                  if (areaItem.value != null) {
+                    if (chinaAddressEnum ==
+                        PickerChinaAddressEnum.provinceAndCityAndArea) {
+                      if (areaItem.value!.code == code) {
+                        selecteds.add(provinceItem.value!.area);
+                        selecteds.add(cityItem.value!.area);
+                        selecteds.add(areaItem.value!.area);
+                        return selecteds;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return selecteds;
   }
 
   PickerChinaAddressAdapter(this.chinaAddressEnum) {

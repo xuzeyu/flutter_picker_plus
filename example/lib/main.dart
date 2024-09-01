@@ -773,6 +773,8 @@ class _MyHomePageState extends State<MyHomePage> {
     List<int> index2 = adapter.getSelectedsByArea("屏东县");
     String area = adapter.getAreaByCode("130127000000");
     String code = adapter.getCodeByArea("屏东县");
+    List<String> areas = adapter.getAreasByCode("130127000000");
+    List<String> codes = adapter.getCodesByArea("白杨市");
     final result = await Picker(
             confirmTextStyle: TextStyle(fontSize: 15, color: Colors.black),
             cancelTextStyle: TextStyle(fontSize: 15, color: Colors.grey),
