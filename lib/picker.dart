@@ -6663,7 +6663,7 @@ class ChinaAddressPickerAdapter extends PickerDataAdapter<PickerAddressItem> {
     return selecteds;
   }
 
-  getSelectedsByArea(String area) {
+  List<int> getSelectedsByArea(String area) {
     List<int> selecteds = [];
     for (var i = 0; i < data.length; i++) {
       PickerItem<PickerAddressItem> provinceItem = data[i];
@@ -6706,6 +6706,82 @@ class ChinaAddressPickerAdapter extends PickerDataAdapter<PickerAddressItem> {
       }
     }
     return selecteds;
+  }
+
+  String getCodeByArea(String area) {
+    for (var i = 0; i < data.length; i++) {
+      PickerItem<PickerAddressItem> provinceItem = data[i];
+      if (provinceItem.value != null) {
+        if (chinaAddressEnum == PickerChinaAddressEnum.province) {
+          if (provinceItem.value!.area == area) {
+            return provinceItem.value!.code;
+          }
+        } else if (provinceItem.children != null) {
+          for (var j = 0; j < provinceItem.children!.length; j++) {
+            PickerItem<PickerAddressItem> cityItem = provinceItem.children![j];
+            if (cityItem.value != null) {
+              if (chinaAddressEnum == PickerChinaAddressEnum.provinceAndCity) {
+                if (cityItem.value!.area == area) {
+                  return cityItem.value!.code;
+                }
+              } else if (cityItem.children != null) {
+                for (var k = 0; k < cityItem.children!.length; k++) {
+                  PickerItem<PickerAddressItem> areaItem =
+                      cityItem.children![k];
+                  if (areaItem.value != null) {
+                    if (chinaAddressEnum ==
+                        PickerChinaAddressEnum.provinceAndCityAndArea) {
+                      if (areaItem.value!.area == area) {
+                        return areaItem.value!.code;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return "";
+  }
+
+  String getAreaByCode(String code) {
+    for (var i = 0; i < data.length; i++) {
+      PickerItem<PickerAddressItem> provinceItem = data[i];
+      if (provinceItem.value != null) {
+        if (chinaAddressEnum == PickerChinaAddressEnum.province) {
+          if (provinceItem.value!.code == code) {
+            return provinceItem.value!.area;
+          }
+        } else if (provinceItem.children != null) {
+          for (var j = 0; j < provinceItem.children!.length; j++) {
+            PickerItem<PickerAddressItem> cityItem = provinceItem.children![j];
+            if (cityItem.value != null) {
+              if (chinaAddressEnum == PickerChinaAddressEnum.provinceAndCity) {
+                if (cityItem.value!.code == code) {
+                  return cityItem.value!.area;
+                }
+              } else if (cityItem.children != null) {
+                for (var k = 0; k < cityItem.children!.length; k++) {
+                  PickerItem<PickerAddressItem> areaItem =
+                      cityItem.children![k];
+                  if (areaItem.value != null) {
+                    if (chinaAddressEnum ==
+                        PickerChinaAddressEnum.provinceAndCityAndArea) {
+                      if (areaItem.value!.code == code) {
+                        return areaItem.value!.area;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return "";
   }
 
   ChinaAddressPickerAdapter(this.chinaAddressEnum) {
