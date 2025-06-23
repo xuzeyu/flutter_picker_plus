@@ -32,10 +32,8 @@ class PickerLocalizations extends PickerLocalizationsBase {
         _static;
   }
 
-  /// 注册自定义语言
-  ///
   /// Register custom language
-  static registerCustomLanguage(String name,
+  static void registerCustomLanguage(String name,
       {String? cancelText,
       String? confirmText,
       List<String>? ampm,
@@ -57,7 +55,7 @@ class PickerLocalizations extends PickerLocalizationsBase {
     final defaultValue = localizedValues['en']!;
     final data = {
       'cancelText': cancelText ?? defaultValue['cancelText'] as String,
-      'confirmText': cancelText ?? defaultValue['confirmText'] as String,
+      'confirmText': confirmText ?? defaultValue['confirmText'] as String,
       'ampm': ampm ?? defaultValue['ampm'] as List,
     };
     if (months != null) {
@@ -89,6 +87,9 @@ class PickerLocalizations extends PickerLocalizationsBase {
     'ru',
     'ur',
     'id',
+    'jv',
+    'vi',
+    'sl'
   ];
 
   /// Language Values
@@ -685,6 +686,105 @@ class PickerLocalizations extends PickerLocalizationsBase {
         "Oktober",
         "November",
         "Desember"
+      ],
+    },
+    'jv': {
+      'cancelText': 'Batal',
+      'confirmText': 'Konfirmasi',
+      'ampm': ['Isuk', 'Sore'],
+      'months': [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Mei",
+        "Jun",
+        "Jul",
+        "Agu",
+        "Sep",
+        "Okt",
+        "Nov",
+        "Des",
+      ],
+      'monthsLong': [
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember"
+      ],
+    },
+    'vi': {
+      'cancelText': 'Hủy',
+      'confirmText': 'Xác nhận',
+      'ampm': ['SA', 'CH'],
+      'months': [
+        "Th1",
+        "Th2",
+        "Th3",
+        "Th4",
+        "Th5",
+        "Th6",
+        "Th7",
+        "Th8",
+        "Th9",
+        "Th10",
+        "Th11",
+        "Th12",
+      ],
+      'monthsLong': [
+        "Tháng 1",
+        "Tháng 2",
+        "Tháng 3",
+        "Tháng 4",
+        "Tháng 5",
+        "Tháng 6",
+        "Tháng 7",
+        "Tháng 8",
+        "Tháng 9",
+        "Tháng 10",
+        "Tháng 11",
+        "Tháng 12"
+      ],
+    },
+    'sl': {
+      'cancelText': 'Prekliči',
+      'confirmText': 'Potrdi',
+      'ampm': ['AM', 'PM'],
+      'months': [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Maj",
+        "Jun",
+        "Jul",
+        "Avg",
+        "Sep",
+        "Okt",
+        "Nov",
+        "Dec",
+      ],
+      'monthsLong': [
+        "Januar",
+        "Februar",
+        "Marec",
+        "April",
+        "Maj",
+        "Junij",
+        "Julij",
+        "Avgust",
+        "September",
+        "Oktober",
+        "November",
+        "December"
       ],
     },
   };
