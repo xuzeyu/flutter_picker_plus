@@ -780,6 +780,8 @@ class MyHomePageState extends State<MyHomePage> {
         PickerChinaAddressEnum.provinceAndCityAndArea);
     List<int> index = adapter.getSelectedsByCode("130127000000");
     List<int> index2 = adapter.getSelectedsByArea("屏东县");
+    String area = adapter.getAreaByCode("130127000000");
+    String code = adapter.getCodeByArea("屏东县");
     final result = await Picker(
             confirmTextStyle: TextStyle(fontSize: 15, color: Colors.black),
             cancelTextStyle: TextStyle(fontSize: 15, color: Colors.grey),
