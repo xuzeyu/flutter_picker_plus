@@ -778,11 +778,11 @@ class MyHomePageState extends State<MyHomePage> {
   showPickerAddress(BuildContext context) async {
     PickerChinaAddressAdapter adapter = PickerChinaAddressAdapter(
         PickerChinaAddressEnum.provinceAndCityAndArea);
-    List<int> index = adapter.getSelectedsByCode("130127000000");
+    List<int> index = adapter.getSelectedsByCode("130127");
     List<int> index2 = adapter.getSelectedsByArea("屏东县");
-    String area = adapter.getAreaByCode("130127000000");
+    String area = adapter.getAreaByCode("130127");
     String code = adapter.getCodeByArea("屏东县");
-    List<String> areas = adapter.getAreasByCode("130127000000");
+    List<String> areas = adapter.getAreasByCode("130127");
     List<String> codes = adapter.getCodesByArea("白杨市");
     final result = await Picker(
             confirmTextStyle: TextStyle(fontSize: 15, color: Colors.black),
